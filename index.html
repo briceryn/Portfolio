@@ -58,34 +58,43 @@
                 <div class="skill-category">
                     <h3><i class="fas fa-laptop-code"></i> Programmation</h3>
                     <ul class="skill-list">
-                        <li class="skill-item">Python, Java, C, JavaScript, HTML/CSS</li>
-                        <li class="skill-item">Programmation Orientée Objet</li>
+                        <li class="skill-item">Python, Java, C, PHP, JavaScript, HTML/CSS</li>
+                        <li class="skill-item">Programmation Orientée Objet (POO)</li>
                         <li class="skill-item">Algorithmes et structures de données</li>
-                        <li class="skill-item">Développement web</li>
+                        <li class="skill-item">Développement web (PHP, jQuery, Apache)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Données</h3>
+                    <h3><i class="fas fa-database"></i> Bases de données</h3>
                     <ul class="skill-list">
-                        <li class="skill-item">SQL, bases de données</li>
-                        <li class="skill-item">NumPy, analyse de données</li>
-                        <li class="skill-item">Visualisation (Matplotlib)</li>
+                        <li class="skill-item">SQL (MariaDB, PostgreSQL)</li>
+                        <li class="skill-item">PDO, gestion de données</li>
+                        <li class="skill-item">Stockage JSON</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-calculator"></i> Mathématiques</h3>
+                    <h3><i class="fas fa-network-wired"></i> Réseaux & Systèmes</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Administration Linux (Debian)</li>
+                        <li class="skill-item">Serveurs DNS (BIND9), DHCP, Apache</li>
+                        <li class="skill-item">LDAP, Samba, iptables</li>
+                        <li class="skill-item">TCP/IP, routage, NAT</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Analyse & Mathématiques</h3>
                     <ul class="skill-list">
                         <li class="skill-item">Algèbre linéaire, calcul matriciel</li>
                         <li class="skill-item">Probabilités et statistiques</li>
-                        <li class="skill-item">Optimisation, graphes</li>
+                        <li class="skill-item">Optimisation, graphes, FFT</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-tools"></i> Outils</h3>
                     <ul class="skill-list">
-                        <li class="skill-item">VS Code, Jupyter, Git</li>
+                        <li class="skill-item">VS Code, Jupyter, Git, NetBeans</li>
                         <li class="skill-item">Linux, ligne de commande</li>
-                        <li class="skill-item">Tests unitaires, documentation</li>
+                        <li class="skill-item">OpenGL, GLUT, jQuery</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -138,74 +147,109 @@
         <div class="container">
             <h2>Projets</h2>
             <div class="projects-container">
+                <!-- Projet 1 : Helpdesk -->
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-database"></i>
+                        <i class="fas fa-ticket-alt"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Système de Gestion de Collections</h3>
+                        <h3>Helpdesk - Système de tickets</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">jQuery</span>
+                            <span class="project-tag">JSON</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <p>Application web permettant aux étudiants de créer des tickets pour poser des questions ou signaler des problèmes. Les tuteurs peuvent consulter tous les tickets et y répondre via un système de commentaires. Authentification par sessions et gestion des rôles.</p>
+                        <a href="#" class="btn">Détails</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : SR2 - Infrastructure réseau -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Infrastructure réseau d'entreprise</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Debian</span>
+                            <span class="project-tag">DNS</span>
+                            <span class="project-tag">Apache</span>
+                            <span class="project-tag">LDAP</span>
+                            <span class="project-tag">Samba</span>
+                        </div>
+                        <p>Mise en place d'un réseau complet avec routage, serveur DNS (BIND9), serveur web (Apache), bases de données (MariaDB/PostgreSQL), annuaire LDAP et partage de fichiers Samba. Sécurisation par iptables.</p>
+                        <a href="#" class="btn">Détails</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 : DSATUR - Coloration de graphe -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>DSATUR - Coloration de graphe</h3>
                         <div class="project-tags">
                             <span class="project-tag">Java</span>
-                            <span class="project-tag">TCP/IP</span>
-                            <span class="project-tag">MD5</span>
+                            <span class="project-tag">Algorithmes</span>
+                            <span class="project-tag">Graphes</span>
                         </div>
-                        <p>Architecture client-serveur modulaire avec communication réseau via sockets, sérialisation, concurrence et authentification sécurisée.</p>
+                        <p>Implémentation de l'algorithme DSATUR pour la coloration de grands graphes (Email-Enron : 36692 sommets, 367662 arêtes). Optimisation avec BitSet et PriorityQueue pour des performances optimales.</p>
                         <a href="#" class="btn">Détails</a>
                     </div>
                 </div>
+
+                <!-- Projet 4 : FFT - Transformée de Fourier -->
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-road"></i>
+                        <i class="fas fa-waveform"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Gestion Autoroutière</h3>
+                        <h3>Transformée de Fourier rapide</h3>
                         <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">FFT</span>
+                            <span class="project-tag">Traitement d'images</span>
                         </div>
-                        <p>Gestion des utilisateurs, trajets, abonnements et incidents sur réseau autoroutier.</p>
+                        <p>Implémentation de la FFT 1D et 2D ainsi que leurs versions inverses. Passage d'une complexité O(N⁴) à O(2·N²·log(N)) via l'algorithme diviser pour régner. Application au traitement d'images.</p>
                         <a href="#" class="btn">Détails</a>
                     </div>
                 </div>
+
+                <!-- Projet 5 : Pikachu 3D -->
                 <div class="project-card">
                     <div class="project-img">
-                        <i class="fas fa-wind"></i>
+                        <i class="fas fa-cube"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Détecteur de Pollution</h3>
+                        <h3>Modélisation 3D de Pikachu</h3>
                         <div class="project-tags">
-                            <span class="project-tag">Arduino</span>
-                            <span class="project-tag">IoT</span>
+                            <span class="project-tag">OpenGL</span>
+                            <span class="project-tag">GLUT</span>
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">Textures</span>
                         </div>
-                        <p>Mesure en temps réel de l'humidité et de la qualité de l'air avec capteurs spécialisés.</p>
+                        <p>Modélisation complète de Pikachu en 3D avec sphères paramétriques, textures JPEG (peau, rayures, fond), éclairage (2 sources lumineuses) et animations (balancement, rotation caméra).</p>
                         <a href="#" class="btn">Détails</a>
                     </div>
                 </div>
+
+                <!-- Projet 6 : 6 Qui Prend -->
                 <div class="project-card">
                     <div class="project-img">
                         <i class="fas fa-gamepad"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Jeu de Memory</h3>
+                        <h3>6 Qui Prend - Jeu en réseau</h3>
                         <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">POO</span>
+                            <span class="project-tag">C</span>
+                            <span class="project-tag">TCP/IP</span>
+                            <span class="project-tag">FIFO</span>
+                            <span class="project-tag">Sémaphores</span>
                         </div>
-                        <p>Version avancée du jeu de memory avec interface immersive.</p>
-                        <a href="#" class="btn">Détails</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-dungeon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Jeu d'Aventure Textuel</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">Algorithmes</span>
-                        </div>
-                        <p>Exploration interactive d'un plateau composé de salles avec éléments dynamiques.</p>
+                        <p>Jeu de cartes multijoueur avec architecture client-serveur. Support du jeu en local (FIFOs) et en réseau (sockets TCP). Robots avec 3 niveaux d'IA (débutant, intermédiaire, avancé) et système de statistiques.</p>
                         <a href="#" class="btn">Détails</a>
                     </div>
                 </div>
@@ -220,7 +264,7 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Disponible pour des opportunités</h3>
-                    <p>Je suis actuellement à la recherche de stages ou de projets collaboratifs en développement logiciel ou analyse de données.</p>
+                    <p>Je suis actuellement à la recherche de stages ou de projets collaboratifs en développement logiciel, administration système ou analyse de données.</p>
                     <div class="contact-methods">
                         <div class="contact-item">
                             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
@@ -242,6 +286,7 @@
                             <span class="interest-tag">Musique</span>
                             <span class="interest-tag">Informatique</span>
                             <span class="interest-tag">Mathématiques</span>
+                            <span class="interest-tag">Réseaux</span>
                         </div>
                     </div>
                 </div>
