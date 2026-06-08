@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($message)) $errors[] = "Message requis";
     
     if (empty($errors)) {
-        $to = "lawsonb0905@gmail.com";
+        $to = "lawson.ryan@outlook.com";
         $email_subject = "Portfolio - $subject";
         
         $email_message = "
