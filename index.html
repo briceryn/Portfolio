@@ -258,61 +258,62 @@
 
     <!-- Contact -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Disponible pour des opportunités</h3>
-                    <p>Je suis actuellement à la recherche d'une alternance ou de projets collaboratifs en développement logiciel, administration système, intelligence artificielle ou analyse de données.</p>
-                    <div class="contact-methods">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div><strong>Email</strong><br>lawson.ryan@outlook.com</div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div><strong>Localisation</strong><br>Dijon, France</div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
-                            <div><strong>Formation</strong><br>Licence Informatique - Université de Bourgogne</div>
-                        </div>
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Disponible pour des opportunités</h3>
+                <p>Je suis actuellement à la recherche de stages ou de projets collaboratifs en développement logiciel, administration système ou analyse de données.</p>
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div><strong>Email</strong><br>lawsonb0905@gmail.com</div>
                     </div>
-                    <div class="interests">
-                        <h4>Centres d'intérêt</h4>
-                        <div class="interest-tags">
-                            <span class="interest-tag">Sport</span>
-                            <span class="interest-tag">Musique</span>
-                            <span class="interest-tag">Informatique</span>
-                            <span class="interest-tag">Mathématiques</span>
-                            <span class="interest-tag">Réseaux</span>
-                        </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div><strong>Localisation</strong><br>Dijon, France</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div><strong>Formation</strong><br>Licence Informatique - Université de Bourgogne</div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nom</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Sujet</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Envoyer</button>
-                    </form>
+                <div class="interests">
+                    <h4>Centres d'intérêt</h4>
+                    <div class="interest-tags">
+                        <span class="interest-tag">Sport</span>
+                        <span class="interest-tag">Musique</span>
+                        <span class="interest-tag">Informatique</span>
+                        <span class="interest-tag">Mathématiques</span>
+                        <span class="interest-tag">Réseaux</span>
+                    </div>
                 </div>
             </div>
+            <div class="contact-form">
+                <!-- Formulaire modifié pour PHP -->
+                <form action="send_mail.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 </main>
 
 <footer>
